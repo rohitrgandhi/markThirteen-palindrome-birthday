@@ -11,9 +11,11 @@ header{
     margin: 2rem;
 }
 p{
-    padding:1rem;
+    font-style: italic;
 }
-
+div{
+    padding:1.5rem;
+}
 label{
     margin:1rem;
 }
@@ -26,13 +28,18 @@ button{
 .output{
     font-size: 2rem;
 }
-
+.coloor{
+    color:#374151;
+    background-color: whitesmoke;
+}
 footer {
     text-align: center;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: whitesmoke;
-    border-radius: .5rem;
+    background-color: #374151;
+   
   }
+
+

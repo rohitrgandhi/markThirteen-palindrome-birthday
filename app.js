@@ -20,13 +20,10 @@ function calculateSum(birthDate) //returns addition of digits
     for(let i=0;i<count;i++)
     {   
         if
-        (((birthDate.charAt(i))===((birthDate.charAt(count-i)))))
+        (((birthDate.charAt(i))===((birthDate.charAt((count-1)-i)))))
         {
         add=add+1;
         }
-        else{
-            output.innerText="i am here";
-        }       
     }
         if (add===8)
         {
@@ -40,3 +37,10 @@ function calculateSum(birthDate) //returns addition of digits
     
 }
 
+
+// checked in console
+  /* const date="02-02-2020"
+  const d=date.replaceAll("-","")
+  const l=date.length;
+  var count=0
+  for(let i=0;i<8;i++){if(d.charAt(i)===d.charAt(l-i)){count=count+1}else{"hi here"}} if(count===8){console.log("done")} */
