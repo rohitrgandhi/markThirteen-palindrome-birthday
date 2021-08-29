@@ -4,43 +4,48 @@ const output=document.querySelector("#output");
 const checkButton=document.querySelector("#button");
 
 //when button is clicked check function is called.
-checkButton.addEventListener("click", check);
-
-function check()
-{
+checkButton.addEventListener("click", timeBomb);
+// checkButton.addEventListener("click", checkPalindrome);
+function properStr(){
     let birthDate=dob.value;
-    calculateSum(birthDate);
-}
-function calculateSum(birthDate) //returns addition of digits
-{   
-    //this removes dashes to make it a string of numbers
     birthDate=birthDate.replaceAll("-","");
-    let count=birthDate.length;
-    let add=0;
-    for(let i=0;i<count;i++)
-    {   
-        if
-        (((birthDate.charAt(i))===((birthDate.charAt((count-1)-i)))))
-        {
-        add=add+1;
-        }
-    }
-        if (add===8)
-        {
-            output.innerText="Your birthday is palindrome"
-        }
-        else
-        {
-            output.innerText="ultapulta"
-        }
-    
-    
+    return birthDate;
+}
+
+function reverseStrConverter(birthDate){
+    var splitStr=birthDate.split('');
+    var reverseStr=splitStr.reverse();
+    var joinreverseStr=reverseStr.join('');
+    return joinreverseStr;
+}
+function checkPalindrome(){
+    var birthDate=properStr(dob);
+    var reverseBirthDate=reverseStrConverter(birthDate);
+    return reverseBirthDate===birthDate;
+    // if( reverseBirthDate===birthDate){
+    //     output.innerText="I am a P";
+    // }
+    // else{
+    //     output.innerText="I am not a P";
+    // }
 }
 
 
-// checked in console
-  /* const date="02-02-2020"
-  const d=date.replaceAll("-","")
-  const l=date.length;
-  var count=0
-  for(let i=0;i<8;i++){if(d.charAt(i)===d.charAt(l-i)){count=count+1}else{"hi here"}} if(count===8){console.log("done")} */
+function timeBomb()
+{
+    // var dateStr=[day='', month='', year=''];
+    var year=2000;
+        if(year % 400 === 0)
+        {
+          output.innerText= "400";
+        }
+        if(year % 100 === 0)
+        {
+          output.innerText= "100";
+        }
+        if(year % 4 === 0)
+        {
+          output.innerText= "4";
+        }
+        output.innerText= "false";
+    }
