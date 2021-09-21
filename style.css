@@ -32,14 +32,29 @@ button{
     color:#374151;
     background-color: whitesmoke;
 }
+
 footer {
     text-align: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #374151;
+  }
+
+.link
+{
+    text-decoration: none;
+    padding:.3rem 2rem;
+} 
+  .list-non-bullet
+{
+    list-style:none;    
+}
+
+.list-item-inline
+{
+    display: inline;
+    padding: 0rem 0.5rem;
+}
    
+  img {
+    padding: 1rem .2rem;
   }
 
 
