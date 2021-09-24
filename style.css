@@ -7,7 +7,7 @@ body{
     background-color:#00BFA6;
 }
 header{
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 2rem;
 }
 p{
@@ -26,7 +26,7 @@ button{
 }
 
 .output{
-    font-size: 2rem;
+    font-size: 1.3rem;
 }
 .coloor{
     color:#374151;
