@@ -163,7 +163,7 @@ function check()
     if (!isPalindrome) 
     {
       const [ctr, nextDate] = getNextPalindromeDate(date);
-      output.innerText = `The nearest palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year}, you need to wait for ${ctr} days more.`;
+      output.innerText = `The nearest palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year}, you need to wait for ${ctr} days.`;
     } 
     else
     {
