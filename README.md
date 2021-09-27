@@ -6,8 +6,8 @@ Problem Statement
 - Ask the user to input his/her birth date
 - Check if the entered birthdate is a palindrome, if yes, show a message
 If the entered birthdate is not a palindrome:
-* Find the nearest palindrome date
-* Find how many days they missed
+1. Find the nearest palindrome date
+2. Find how many days they missed
 
 **Step 1: Building the logic**
 **Ex-01: Write a function in JS that takes a string and reverses it**
