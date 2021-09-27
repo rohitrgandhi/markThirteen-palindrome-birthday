@@ -163,13 +163,20 @@ function check()
     if (!isPalindrome) 
     {
       const [ctr, nextDate] = getNextPalindromeDate(date);
-      output.innerText = `The nearest palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year}, you need to wait for ${ctr} days.`;
+      delay();
+      setTimeout(function(){ output.innerText = `The nearest palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year}, you need to wait for ${ctr} days.`; }, 1500);
     } 
     else
     {
-      output.innerText = "The odds of being alive on one's palindromic birthday are about 1 in 120. You are that ONE. Congratulations, your birthday is a palindrome!! ";
+      delay();
+      setTimeout(function(){output.innerText = "The odds of being alive on one's palindromic birthday are about 1 in 120. You are that ONE. Congratulations, your birthday is a palindrome!! "; }, 1500);
     }
   }
 }
+
+ function delay()
+ {
+  setTimeout(function(){ output.innerText = "Calculating.....   ∫eˣ - log(x)..."; }, 1);
+ }
 
 btn.addEventListener("click", check);
